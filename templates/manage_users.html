@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Manage Users{% endblock %}
+{% block content %}
+<div
+  class="content-wrapper admin-dashboard-page"
+  data-manage-users
+  data-role-options='{{ roles | map(attribute="name") | list | tojson }}'
+>
+  <section class="content-header">
+    <div class="page-header">
+      <div>
+        <h1>User Management</h1>
+        <p class="page-subtitle">Create users and custom groups</p>
+      </div>
+      <div class="header-actions">
+        <a href="{{ url_for('admin_dashboard') }}" class="btn-mail">Back to Dashboard</a>
+        <a href="{{ url_for('logout') }}" class="btn-logout">Logout</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="dashboard-card dual-calendar-card full-row-card">
+      <h3>Create Group</h3>
+      <form id="createGroupForm" class="stacked-form manage-form">
+        <input type="text" name="name" placeholder="Group name" required />
+        <label class="compact-label">Attach existing roles</label>
+        <select name="roles" id="groupRoles" multiple>
+          {% for r in roles %}
+          <option value="{{ r.name }}">{{ r.name }}</option>
+          {% endfor %}
+        </select>
+        <input type="text" name="new_role" placeholder="Define new role (optional)" />
+        <textarea name="permissions" rows="3" placeholder='Notes/permissions (optional)'></textarea>
+        <button type="submit" class="submit-btn">Save Group</button>
+      </form>
+    </div>
+
+    <div class="dashboard-card dual-calendar-card full-row-card">
+      <h3>Create User</h3>
+      <form id="createUserForm" class="stacked-form manage-form">
+        <div class="form-grid">
+          <input type="text" name="username" placeholder="Username" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="password" name="password" placeholder="Password" required />
+          <select name="role" required>
+            {% for r in roles %}
+            <option value="{{ r.name }}" {% if r.name=='researcher' %}selected{% endif %}>{{ r.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <label class="compact-label checkbox-inline"><input type="checkbox" id="showCreatePassword" /> Show password</label>
+        <button type="submit" class="submit-btn">Create User</button>
+      </form>
+    </div>
+
+    <div class="dashboard-card dual-calendar-card full-row-card">
+      <h3>Existing Users</h3>
+      <div class="mailbox__list manage-users__list">
+        {% for u in users %}
+        <div class="task-row slim">
+          <div class="task-row__meta">
+            <span class="task-row__title">{{ u.username }}</span>
+            <span class="task-row__date">{{ u.email }}</span>
+          </div>
+          <div class="task-row__actions">
+            <span class="task-row__assignee">Role: {{ u.role }}</span>
+            <button class="btn-logout submit-btn--small" data-delete-user="{{ u.id }}">Delete</button>
+            <button class="submit-btn submit-btn--small"
+              data-edit-user="{{ u.id }}"
+              data-username="{{ u.username }}"
+              data-email="{{ u.email }}"
+              data-role="{{ u.role }}"
+              data-active="{{ u.is_active }}"
+            >Edit</button>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}

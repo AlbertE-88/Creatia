@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block title %}Register - Creatia{% endblock %}
+
+{% block content %}
+<section class="login-page">
+  <div class="login-overlay"></div>
+  <div class="login-container">
+    <h2>Create Account</h2>
+
+    {% if error %}
+    <div class="error-message show">{{ error }}</div>
+    {% endif %}
+
+    <form method="POST" action="{{ url_for('register') }}" id="registerForm" class="login-form">
+      {{ form.csrf_token }}
+
+      <div class="form-group">
+        {{ form.username.label(class_='form-label') }}
+        {{ form.username(class_='form-control', placeholder='Choose a username') }}
+        {% if form.username.errors %}
+          <div class="field-error">{{ form.username.errors[0] }}</div>
+        {% endif %}
+      </div>
+
+      <div class="form-group">
+        {{ form.email.label(class_='form-label') }}
+        {{ form.email(class_='form-control', placeholder='Enter your email') }}
+        {% if form.email.errors %}
+          <div class="field-error">{{ form.email.errors[0] }}</div>
+        {% endif %}
+      </div>
+
+      <div class="form-group">
+        {{ form.password.label(class_='form-label') }}
+        {{ form.password(class_='form-control', placeholder='Create a password') }}
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="showPasswordReg" class="password-checkbox">
+          <label for="showPasswordReg" class="checkbox-label">Show password</label>
+        </div>
+        {% if form.password.errors %}
+          <div class="field-error">{{ form.password.errors[0] }}</div>
+        {% endif %}
+      </div>
+
+      <div class="form-group">
+        {{ form.password_confirm.label(class_='form-label') }}
+        {{ form.password_confirm(class_='form-control', placeholder='Confirm password') }}
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="showPasswordConfirm" class="password-checkbox">
+          <label for="showPasswordConfirm" class="checkbox-label">Show password</label>
+        </div>
+        {% if form.password_confirm.errors %}
+          <div class="field-error">{{ form.password_confirm.errors[0] }}</div>
+        {% endif %}
+      </div>
+
+      {{ form.submit(class_='submit-btn') }}
+    </form>
+
+    <a href="{{ url_for('login_google') }}" class="google-btn" title="Sign in with Google">
+      <span class="google-icon" aria-hidden="true">G</span>
+      <span>Sign in with Google</span>
+    </a>
+
+    <div class="auth-switch">
+      Already have an account? <a href="{{ url_for('login') }}" class="auth-switch__link">Login here</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

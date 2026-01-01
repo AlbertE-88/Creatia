@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Mails - Creatia{% endblock %}
+{% block content %}
+<div class="content-wrapper mailbox-page">
+  <section class="content-header">
+    <div class="page-header">
+      <div>
+        <h1>Mailbox</h1>
+        <p class="page-subtitle">Stay on top of your notifications</p>
+      </div>
+      <div class="header-actions">
+        <a href="{{ url_for('admin_dashboard') if user.role == 'admin' else (url_for('supervisor_dashboard') if user.role == 'supervisor' else url_for('researcher_dashboard')) }}" class="btn-mail">Back to dashboard</a>
+        <a href="{{ url_for('logout') }}" class="btn-logout">Logout</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="mailbox">
+      <aside class="mailbox__sidebar">
+        <button class="btn-compose" id="composeBtn">✉️ Compose</button>
+        <nav class="mailbox__nav">
+          <button class="mailbox__nav-btn" data-folder="inbox">Inbox</button>
+          <button class="mailbox__nav-btn" data-folder="sent">Sent</button>
+          <button class="mailbox__nav-btn" data-folder="draft">Drafts</button>
+          <button class="mailbox__nav-btn" data-folder="trash">Trash</button>
+          <button class="mailbox__nav-btn" data-folder="saved">Saved mails</button>
+        </nav>
+      </aside>
+      <div class="mailbox__main">
+        <div class="mailbox__toolbar">
+          <button class="mailbox__icon-btn" id="toggleSelectAll" title="Select all">☑</button>
+          <button class="mailbox__icon-btn" id="refreshMails" title="Refresh">⟳</button>
+          <button class="mailbox__icon-btn" id="markRead" title="Mark as read">✓</button>
+          <button class="mailbox__icon-btn" id="deleteMails" title="Delete">🗑</button>
+          <button class="mailbox__icon-btn" id="restoreMails" title="Restore from trash">↩</button>
+        </div>
+        <div class="mailbox__list" id="mailList">
+          <div class="empty-state">Loading…</div>
+        </div>
+        <div class="mailbox__detail" id="mailDetail" hidden>
+          <div class="mailbox__detail-header">
+            <h3 id="mailDetailSubject"></h3>
+            <span id="mailDetailMeta"></span>
+          </div>
+          <div id="mailDetailBody" class="mailbox__detail-body"></div>
+        </div>
+      </div>
+        <div class="mailbox__compose" id="composePanel" hidden>
+          <h3>Compose</h3>
+          <form id="composeForm">
+          <label>To
+            <select name="recipient_id" required>
+              <option value="" disabled selected>Select recipient</option>
+              {% for u in users %}
+              <option value="{{ u.id }}">{{ u.username }}</option>
+              {% endfor %}
+            </select>
+          </label>
+          <label>Subject
+            <input type="text" name="subject" placeholder="Subject" required />
+          </label>
+          <label>Message
+            <textarea name="body" rows="5" placeholder="Write your message" required></textarea>
+          </label>
+          <div class="compose-actions">
+            <button type="submit" class="submit-btn">Send</button>
+            <button type="button" class="ghost-btn" id="composeCancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}

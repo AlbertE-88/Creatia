@@ -1,0 +1,429 @@
+{% extends "base.html" %} {% block title %}Profile{% endblock %} {% block
+content %} {% set display_name = user.full_name or user.username %} {% set
+role_labels = {"admin": "مدیر پروژه", "supervisor": "ناظر پروژه", "researcher":
+"پژوهشگر"} %} {% set role_label = role_labels.get(user.role,
+user.role|capitalize) %} {% set education_value = user.education or "تحصیلات:
+دکتری فیزیک" %} {% set resume_url = url_for('uploaded_file',
+filename=user.resume_path) if user.resume_path else None %} {% set avatar_src =
+url_for('uploaded_file', filename=user.avatar_path) if user.avatar_path else
+url_for('static', filename='assets/img/profile-img.jpg') %} {% set
+assigned_width = 100 if assigned_count else 0 %} {% set completed_width =
+completion_pct if completion_pct <= 100 else 100 %} {% set overdue_width =
+overdue_pct if overdue_pct <= 100 else 100 %}
+<div
+  class="content-wrapper admin-dashboard-page profile-page"
+  data-profile-page
+  data-upload-base="{{ url_for('uploaded_file', filename='') }}"
+>
+  <section class="content-header profile-page-header">
+    <div class="page-header">
+      <div>
+        <h1>Profile</h1>
+        <p class="page-subtitle">Manage your personal information</p>
+      </div>
+      <div class="header-actions">
+        <button
+          type="button"
+          class="btn-mail"
+          id="editProfileBtn"
+          data-default-text="Edit profile"
+        >
+          Edit profile
+        </button>
+        <button
+          type="button"
+          class="btn-logout btn-cancel-edit"
+          id="cancelProfileEdit"
+          hidden
+        >
+          Cancel
+        </button>
+        <a
+          href="{{ url_for('admin_dashboard') if user.role=='admin' else (url_for('supervisor_dashboard') if user.role=='supervisor' else url_for('researcher_dashboard')) }}"
+          class="btn-mail"
+          >Back to dashboard</a
+        >
+        <a href="{{ url_for('chat') }}" class="btn-mail chat-link">
+          Chat <span class="btn-mail__badge" hidden>0</span>
+        </a>
+        <a href="{{ url_for('logout') }}" class="btn-logout">Logout</a>
+      </div>
+    </div>
+  </section>
+  <section
+    class="profile-hero profile-hero--card profile-hero--rtl persian-script"
+    lang="fa"
+    dir="rtl"
+  >
+    <div class="profile-hero__overlay"></div>
+    <div class="profile-hero__header">
+      <label class="profile-avatar profile-avatar--upload" for="avatarInput">
+        <img src="{{ avatar_src }}" alt="Profile" data-avatar-preview />
+        <span class="avatar-edit-hint">تغییر عکس</span>
+        <span class="avatar-handle avatar-handle--tl"></span>
+        <span class="avatar-handle avatar-handle--tr"></span>
+        <span class="avatar-handle avatar-handle--bl"></span>
+        <span class="avatar-handle avatar-handle--br"></span>
+      </label>
+      <div class="profile-hero__text">
+        <div class="profile-hero__row">
+          <div class="profile-field profile-field--hero">
+            <div
+              class="profile-name"
+              data-display="full_name"
+              data-placeholder="{{ user.username }}"
+              data-edit-target="full_name"
+              contenteditable="false"
+            >
+              {{ display_name }}
+            </div>
+          </div>
+          <button
+            type="button"
+            class="edit-pen edit-pen--hero"
+            data-target="full_name"
+            aria-label="Edit full name"
+          >
+            ✎
+          </button>
+        </div>
+        <div class="profile-hero__row">
+          <div class="profile-field profile-field--hero">
+            <div class="profile-subtitle">
+              ایمیل:<span
+                data-display="email"
+                data-placeholder="{{ user.email }}"
+                data-edit-target="email"
+                contenteditable="false"
+                >{{ user.email }}</span
+              >
+            </div>
+          </div>
+          <button
+            type="button"
+            class="edit-pen edit-pen--hero"
+            data-target="email"
+            aria-label="Edit email"
+          >
+            ✎
+          </button>
+        </div>
+        <div class="profile-hero__row">
+          <div class="profile-field profile-field--hero">
+            <div class="profile-subtitle">
+              تلفن:
+              <span
+                data-display="phone_number"
+                data-placeholder="شماره ثبت نشده"
+                data-edit-target="phone_number"
+                contenteditable="false"
+              >
+                {{ user.phone_number or "" }}
+              </span>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="edit-pen edit-pen--hero"
+            data-target="phone_number"
+            aria-label="Edit phone number"
+          >
+            ✎
+          </button>
+        </div>
+        <div class="profile-hero__row profile-hero__role">
+          <div class="profile-role">سمت: {{ role_label }}</div>
+        </div>
+        <div class="profile-hero__row profile-hero__education">
+          <div class="profile-field profile-field--hero">
+            <div
+              class="profile-education"
+              data-display="education"
+              data-placeholder="{{ education_value }}"
+              data-edit-target="education"
+              contenteditable="false"
+            >
+              {{ education_value }}
+            </div>
+          </div>
+          <button
+            type="button"
+            class="edit-pen edit-pen--hero"
+            data-target="education"
+            aria-label="Edit education"
+          >
+            ✎
+          </button>
+        </div>
+        <div class="profile-hero__row profile-hero__resume">
+          <label
+            class="resume-clip"
+            aria-label="Upload resume (PDF)"
+            for="resumeInput"
+          >
+            📎
+          </label>
+          <a
+            href="{{ resume_url or '#' }}"
+            target="_blank"
+            class="profile-resume-link"
+            data-stored-path="{{ user.resume_path or '' }}"
+            {%
+            if
+            not
+            resume_url
+            %}hidden{%
+            endif
+            %}
+          >
+            رزومه
+          </a>
+          <span
+            class="profile-resume-missing"
+            data-resume-placeholder
+            {%
+            if
+            resume_url
+            %}hidden{%
+            endif
+            %}
+          >
+            رزومه ثبت نشده
+          </span>
+          <div class="resume-error" data-resume-error hidden></div>
+        </div>
+        <div class="profile-hero__row">
+          {% set responsibility_default = "مسئولیت در تیم: مدیریت و هماهنگی تیم - مدیریت و تخصیص سیستم محاسباتی" %}
+          {% set supervisor_resp = "مسئولیت در تیم: نظارت و انجام امور اداری پروژه‌ها" %}
+          {% set responsibility_placeholder = supervisor_resp if user.role == 'supervisor' else responsibility_default %}
+          {% set responsibility_value = user.responsibility or responsibility_placeholder %}
+          <div
+            class="profile-responsibility"
+            data-display="responsibility"
+            data-placeholder="{{ responsibility_placeholder }}"
+            data-edit-target="responsibility"
+            contenteditable="false"
+          >
+            {{ responsibility_value }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="profile-badges">
+      <div class="badge-card">
+        <span class="badge-title">تاریخ عضویت</span>
+        <span
+          class="badge-value"
+          data-join-date="{{ user.created_at.strftime('%Y-%m-%d') if user.created_at else '' }}"
+          >نامشخص</span
+        >
+      </div>
+      <div class="badge-card">
+        <span class="badge-title">وضعیت</span>
+        <span class="badge-value"
+          >{{ 'فعال' if user.is_active else 'غیرفعال' }}</span
+        >
+      </div>
+    </div> -->
+  </section>
+
+  <section class="content profile-body">
+    {% if error %}
+    <div class="flash flash-danger">{{ error }}</div>
+    {% endif %}
+    <form
+      id="profileForm"
+      method="POST"
+      class="profile-inline-form stacked-form"
+      enctype="multipart/form-data"
+    >
+      <input type="hidden" name="username" value="{{ user.username }}" />
+      <input type="hidden" name="education" value="{{ education_value }}" />
+      <input type="hidden" name="full_name" value="{{ display_name }}" />
+      <input type="hidden" name="email" value="{{ user.email }}" />
+      <input type="hidden" name="phone_number" value="{{ user.phone_number or '' }}" />
+      <input
+        type="hidden"
+        name="responsibility"
+        value="{{ user.responsibility or '' }}"
+      />
+      <input
+        type="hidden"
+        name="avatar_scale"
+        value="{{ user.avatar_scale or 1.0 }}"
+      />
+      <input
+        type="hidden"
+        name="avatar_offset_x"
+        value="{{ user.avatar_offset_x or 0 }}"
+      />
+      <input
+        type="hidden"
+        name="avatar_offset_y"
+        value="{{ user.avatar_offset_y or 0 }}"
+      />
+      <input
+        type="file"
+        id="avatarInput"
+        name="avatar"
+        accept="image/*"
+        class="hidden-file-input"
+      />
+      <input
+        id="resumeInput"
+        type="file"
+        name="resume"
+        accept="application/pdf,.pdf"
+        class="hidden-file-input"
+      />
+
+      <div class="profile-panels task-stats">
+        <div
+          class="dashboard-card dual-calendar-card profile-info-card card-half skills"
+        >
+          <h3>Tasks Stats</h3>
+
+          <div class="progress-summary">
+            <div class="progress-row">
+              <div class="progress-label">
+                <span class="dot dot-blue"></span>
+                Assigned tasks: {{ assigned_count }}
+              </div>
+              <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar progress-bar--blue"
+                    role="progressbar"
+                    data-progress-width="{{ assigned_width }}"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="progress-row">
+              <div class="progress-label">
+                <span class="dot dot-green"></span>
+                Completed tasks: {{ completed_count }}
+              </div>
+              <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar progress-bar--green"
+                    role="progressbar"
+                    data-progress-width="{{ completed_width }}"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="progress-row">
+              <div class="progress-label">
+                <span class="dot dot-red"></span>
+                Overdue tasks: {{ overdue_count }}
+              </div>
+              <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar progress-bar--red"
+                    role="progressbar"
+                    data-progress-width="{{ overdue_width }}"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="progress-row">
+              <div class="progress-label">
+                <span class="dot dot-green"></span>
+                On-time completion
+                <span class="val">{{ on_time_pct }}%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar progress-bar--green"
+                    role="progressbar"
+                    data-progress-width="{{ on_time_pct }}"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="dashboard-card dual-calendar-card profile-info-card card-half files-card"
+        >
+          <h3>فایل‌ها</h3>
+          <ul class="files-list">
+            {% for key, label in profile_file_labels %} {% set stored =
+            profile_files.get(key) if profile_files else None %}
+            <li
+              class="file-row"
+              data-file-key="{{ key }}"
+              {%
+              if
+              stored
+              %}data-stored-path="{{ stored.stored_path }}"
+              {%
+              endif
+              %}
+              {%
+              if
+              stored
+              %}data-stored-name="{{ stored.filename }}"
+              {%
+              endif
+              %}
+            >
+              <span class="file-label">{{ label }}</span>
+              <span class="file-name" data-file-name>
+                {{ stored.filename if stored else "" }}
+              </span>
+              <button
+                type="button"
+                class="file-remove-btn"
+                data-remove-btn
+                title="حذف فایل"
+                aria-label="حذف فایل"
+              >
+                ×
+              </button>
+              <a
+                href="{{ url_for('uploaded_file', filename=stored.stored_path) if stored else '#' }}"
+                target="_blank"
+                class="file-link"
+                data-file-link
+                {%
+                if
+                not
+                stored
+                %}hidden{%
+                endif
+                %}
+              >
+                مشاهده
+              </a>
+              <label class="file-upload-pill">
+                +
+                <input
+                  type="file"
+                  name="uploads"
+                  class="hidden-file-input"
+                  accept=".pdf,.doc,.docx,.zip,.rar,.txt"
+                  data-file-key="{{ key }}"
+                />
+                <input
+                  type="hidden"
+                  name="remove_files"
+                  value="{{ key }}"
+                  data-remove-input
+                  disabled
+                />
+              </label>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </form>
+  </section>
+</div>
+
+{% endblock %}

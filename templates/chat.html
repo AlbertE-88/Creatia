@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}Chat{% endblock %}
+{% block content %}
+{% set chat_users = namespace(ids=[], lookup=[]) %}
+{% for u in users %}
+  {% set _ = chat_users.ids.append(u.id) %}
+  {% set _ = chat_users.lookup.append([u.id, u.full_name or u.username]) %}
+{% endfor %}
+<div
+  class="content-wrapper chat-page"
+  data-chat-current-user-id="{{ user.id }}"
+  data-chat-current-user-name="{{ (user.full_name or user.username)|e }}"
+  data-chat-user-ids='{{ chat_users.ids | tojson }}'
+  data-chat-user-map='{{ chat_users.lookup | tojson }}'
+>
+  <section class="content-header">
+    <div class="page-header">
+      <div>
+        <h1>Chat</h1>
+        <p class="page-subtitle">Group chat and private messages</p>
+      </div>
+      <div class="header-actions">
+        <a
+          href="{{ url_for('admin_dashboard') if user.role == 'admin' else (url_for('supervisor_dashboard') if user.role == 'supervisor' else url_for('researcher_dashboard')) }}"
+          class="btn-mail"
+        >
+          Back to dashboard
+        </a>
+        <a href="{{ url_for('logout') }}" class="btn-logout">Logout</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content chat-layout">
+    <aside class="chat-sidebar">
+      <div class="chat-section-title">Channels</div>
+      <button class="chat-target active" data-target="group">
+        <span class="chat-target__title">گپ گروهی</span>
+        <small class="chat-target__subtitle">همه کاربران</small>
+        <span class="chat-badge" data-badge="group" hidden>0</span>
+      </button>
+      <div class="chat-section-title">پیام خصوصی</div>
+      <div class="chat-list">
+        {% for u in users %}
+        <button class="chat-target" data-target="{{ u.id }}">
+          <span class="chat-target__title">{{ u.full_name or u.username }}</span>
+          <small class="chat-target__subtitle">@{{ u.username }}</small>
+          <span class="chat-badge" data-badge="{{ u.id }}" hidden>0</span>
+        </button>
+        {% endfor %}
+      </div>
+    </aside>
+
+    <div class="chat-main">
+      <div class="chat-main__header">
+        <div>
+          <div class="chat-title" data-chat-title>گپ گروهی</div>
+          <div class="chat-subtitle" data-chat-subtitle>همه کاربران</div>
+        </div>
+      </div>
+      <div class="chat-messages" data-chat-messages>
+        <p class="chat-empty">پیامی ثبت نشده است.</p>
+      </div>
+      <form id="chatForm" class="chat-form">
+        <input type="hidden" name="target" value="group" />
+        <textarea
+          name="body"
+          rows="2"
+          placeholder="پیام خود را بنویسید..."
+          required
+          maxlength="2000"
+        ></textarea>
+        <button type="submit" class="btn-mail">ارسال</button>
+      </form>
+    </div>
+  </section>
+</div>
+{% endblock %}

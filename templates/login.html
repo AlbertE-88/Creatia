@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}Login - Creatia{% endblock %}
+
+{% block content %}
+<section class="login-page">
+  <div class="login-overlay"></div>
+  <div class="login-container">
+    <h2>Login to Creatia</h2>
+
+    {% if error %}
+    <div class="error-message show">{{ error }}</div>
+    {% endif %}
+
+    <form method="POST" action="{{ url_for('login') }}" id="loginForm" class="login-form">
+      {{ form.csrf_token }}
+
+      <div class="form-group">
+        {{ form.username.label(class_='form-label') }}
+        {{ form.username(class_='form-control', placeholder='Enter your username') }}
+      </div>
+
+      <div class="form-group">
+        {{ form.password.label(class_='form-label') }}
+        {{ form.password(class_='form-control', placeholder='Enter your password') }}
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="showPasswordLogin" class="password-checkbox">
+          <label for="showPasswordLogin" class="checkbox-label">Show password</label>
+        </div>
+      </div>
+
+      {{ form.submit(class_='submit-btn') }}
+    </form>
+
+      <a href="{{ url_for('login_google') }}" class="google-btn" title="Sign in with Google">
+        <span class="google-icon" aria-hidden="true">G</span>
+        <span>Sign in with Google</span>
+      </a>
+
+      <div class="auth-switch">
+        Don't have an account? <a href="{{ url_for('register') }}" class="auth-switch__link">Register here</a>
+      </div>
+  </div>
+</section>
+{% endblock %}
+

@@ -1,0 +1,121 @@
+{% extends "base.html" %} {% block content %}
+<div class="content-wrapper user-dashboard-page">
+  <section class="content-header">
+    <div class="page-header">
+      <div>
+        <h1>Supervisor Dashboard</h1>
+        <p class="page-subtitle">View activity and tasks</p>
+      </div>
+      <div class="header-actions">
+        <a href="{{ url_for('profile') }}" class="btn-mail">Profile</a>
+        <a href="{{ url_for('chat') }}" class="btn-mail chat-link">
+          Chat <span class="btn-mail__badge" hidden>0</span>
+        </a>
+        <a
+          href="{{ url_for('mails') }}"
+          class="btn-mail"
+          data-unread="{{ unread_mails or 0 }}"
+        >
+          Mails <span class="btn-mail__badge" hidden>0</span>
+        </a>
+        <a href="{{ url_for('logout') }}" class="btn-logout">Logout</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="dualcal-row">
+      <div class="dashboard-card dual-calendar-card card-half">
+        <div class="dualcal-header">
+          <div class="dualcal-nav">
+            <button class="ghost-btn" data-cal-action="next">←</button>
+            <button class="ghost-btn ghost-btn--inline" data-cal-action="today">
+              today
+            </button>
+            <button class="ghost-btn" data-cal-action="prev">→</button>
+          </div>
+          <div
+            class="month-title persian-script"
+            data-role="persian-title"
+          ></div>
+        </div>
+        <div class="dualcal-body" data-dualcal>
+          <div class="dualcal-weekdays">
+            <span><b class="persian-script">ش</b><small>Sat</small></span>
+            <span><b class="persian-script">ی</b><small>Sun</small></span>
+            <span><b class="persian-script">د</b><small>Mon</small></span>
+            <span><b class="persian-script">س</b><small>Tue</small></span>
+            <span><b class="persian-script">چ</b><small>Wed</small></span>
+            <span><b class="persian-script">پ</b><small>Thu</small></span>
+            <span><b class="persian-script">ج</b><small>Fri</small></span>
+          </div>
+          <div class="dualcal-grid" data-role="grid"></div>
+        </div>
+      </div>
+      <div class="dashboard-card dual-calendar-card tasks-side-card card-half">
+        <div class="dualcal-header">
+          <div>
+            <h3>Tasks</h3>
+            <!-- <p class="card-note">Tasks visible to you.</p> -->
+          </div>
+          <div class="tasks-tabs" role="tablist">
+            <button class="tasks-tab active" data-task-tab="active">
+              Active <span class="tasks-tab__badge tasks-tab__badge--green" data-active-badge hidden>!</span>
+            </button>
+            <button class="tasks-tab" data-task-tab="overdue">
+              Overdue <span class="tasks-tab__badge" data-overdue-badge hidden>!</span>
+            </button>
+            <button class="tasks-tab" data-task-tab="done">Done</button>
+          </div>
+        </div>
+        <div class="tasks-tab-panels">
+          <div
+            class="tasks-side-list tasks-tab-panel is-active"
+            data-role="tasks-panel"
+            data-task-filter="active"
+          >
+            <p class="empty-state">Loading tasks…</p>
+          </div>
+          <div
+            class="tasks-side-list tasks-tab-panel"
+            data-role="tasks-panel"
+            data-task-filter="overdue"
+          >
+            <p class="empty-state">Loading tasks…</p>
+          </div>
+          <div
+            class="tasks-side-list tasks-tab-panel"
+            data-role="tasks-panel"
+            data-task-filter="done"
+          >
+            <p class="empty-state">Loading tasks…</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="dashboard-card dual-calendar-card card-quarter">
+        <h3>👤 Profile Settings</h3>
+        <p>
+          Update your profile information, password, and account preferences.
+        </p>
+        <div class="muted-panel muted-panel--compact">
+          <p>Email Notifications: <strong>Enabled</strong></p>
+        </div>
+        <a href="{{ url_for('profile') }}" class="btn-action">Edit Profile</a>
+      </div> -->
+
+      <!-- <div class="dashboard-card dual-calendar-card card-quarter">
+        <h3>🔎 Overview</h3>
+        <p>Supervise tasks and timelines.</p>
+      </div> -->
+    </div>
+    {% include "project_tree.html" %}
+    {% include "user_cards.html" %}
+    <div
+      id="taskGlobals"
+      class="task-globals"
+      data-user-id="{{ user.id }}"
+      data-user-role="{{ user.role }}"
+    ></div>
+  </section>
+</div>
+{% endblock %}

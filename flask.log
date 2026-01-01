@@ -1,0 +1,573 @@
+nohup: ignoring input
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9000
+ * Running on http://51.89.160.19:9000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 377-039-808
+172.17.0.2 - - [19/Oct/2025 03:04:44] "GET / HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:04:44] "[36mGET /static/assets/vendor/aos/aos.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:44] "[36mGET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:44] "[36mGET /static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:44] "[36mGET /static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:44] "[36mGET /static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:44] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/css/style.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?2820a3852bdb9a5832199cc61cec4e65 HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/img/navbar-buttons/contact.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/img/navbar-buttons/services.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/img/navbar-buttons/about.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/img/navbar-buttons/Login.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/img/2-11.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/img/navbar-buttons/portfolio.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/img/navbar-buttons/Homeh.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/img/logo.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/vendor/aos/aos.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/img/logo-org.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/img/profile-img.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/img/portfolio/CafePersia-main.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/img/portfolio/Pouyatex-main.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/img/portfolio/Vestmentia-main.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/vendor/typed.js/typed.umd.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/vendor/waypoints/noframework.waypoints.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:45] "[36mGET /static/assets/js/main.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:46] "[36mGET /static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:47] "[36mGET /static/assets/img/navbar-buttons/Loginh.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:04:48] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/mostafa/Websites/Creatia/app.py", line 14, in login
+    if request.method == 'POST':
+NameError: name 'request' is not defined
+172.17.0.2 - - [19/Oct/2025 03:04:48] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:04:48] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:04:48] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/mostafa/Websites/Creatia/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 377-039-808
+172.17.0.2 - - [19/Oct/2025 03:08:39] "GET /login HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:10:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+172.17.0.2 - - [19/Oct/2025 03:10:15] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/mostafa/Websites/Creatia/app.py", line 31, in admin_dashboard
+    return render_template('admin_dashboard.html')
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/mostafa/Websites/Creatia/templates/admin_dashboard.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+172.17.0.2 - - [19/Oct/2025 03:10:15] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:10:15] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:10:16] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:11:20] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/mostafa/Websites/Creatia/app.py", line 31, in admin_dashboard
+    return render_template('admin_dashboard.html')
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/mostafa/Websites/Creatia/templates/admin_dashboard.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+172.17.0.2 - - [19/Oct/2025 03:11:20] "[36mGET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:11:20] "[36mGET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:11:21] "[36mGET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:11:22] "GET /login HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:11:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+172.17.0.2 - - [19/Oct/2025 03:11:27] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/mostafa/Websites/Creatia/app.py", line 37, in user_dashboard
+    return render_template('user_dashboard.html')
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/mostafa/Websites/Creatia/templates/user_dashboard.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/mostafa/Websites/Creatia/venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+172.17.0.2 - - [19/Oct/2025 03:11:27] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:11:27] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:11:27] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:13:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+172.17.0.2 - - [19/Oct/2025 03:13:27] "GET /dashboard HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/vendor/aos/aos.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/css/style.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/img/logo-org.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/img/profile-img.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/img/portfolio/CafePersia-main.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?2820a3852bdb9a5832199cc61cec4e65 HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/img/navbar-buttons/about.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/img/navbar-buttons/portfolio.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/img/navbar-buttons/services.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/img/2-11.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/img/navbar-buttons/Homeh.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/img/navbar-buttons/contact.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/img/navbar-buttons/Login.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/img/logo.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/img/portfolio/Pouyatex-main.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/img/portfolio/Vestmentia-main.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:28] "[36mGET /static/assets/vendor/aos/aos.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:29] "[36mGET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:29] "[36mGET /static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:29] "[36mGET /static/assets/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:29] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:29] "[36mGET /static/assets/vendor/typed.js/typed.umd.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:29] "[36mGET /static/assets/vendor/waypoints/noframework.waypoints.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:29] "[36mGET /static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:29] "[36mGET /static/assets/js/main.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:45] "[36mGET /static/assets/img/navbar-buttons/Loginh.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:46] "GET /login HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:13:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+172.17.0.2 - - [19/Oct/2025 03:13:52] "GET /admin HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:13:52] "[36mGET /static/assets/vendor/aos/aos.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:52] "[36mGET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:52] "[36mGET /static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:52] "[36mGET /static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:52] "[36mGET /static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:52] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/css/style.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/img/logo-org.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/img/profile-img.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/img/portfolio/CafePersia-main.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?2820a3852bdb9a5832199cc61cec4e65 HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/img/navbar-buttons/services.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/img/2-11.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/img/navbar-buttons/Login.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/img/navbar-buttons/Homeh.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/img/navbar-buttons/portfolio.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/img/navbar-buttons/contact.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/img/logo.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/img/navbar-buttons/about.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/img/portfolio/Pouyatex-main.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/img/portfolio/Vestmentia-main.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/vendor/aos/aos.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/vendor/typed.js/typed.umd.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/vendor/waypoints/noframework.waypoints.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:13:53] "[36mGET /static/assets/js/main.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:15] "GET /admin HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:18:15] "[36mGET /static/assets/css/style.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:36] "GET /login HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:18:38] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+172.17.0.2 - - [19/Oct/2025 03:18:42] "[36mGET /static/assets/img/navbar-buttons/Loginh.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:42] "GET /login HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:18:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+172.17.0.2 - - [19/Oct/2025 03:18:44] "GET /dashboard HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:18:44] "[36mGET /static/assets/css/style.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:58] "GET / HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/vendor/aos/aos.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/css/style.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/img/logo-org.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/img/profile-img.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/img/portfolio/CafePersia-main.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?2820a3852bdb9a5832199cc61cec4e65 HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/img/navbar-buttons/about.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/img/navbar-buttons/contact.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/img/navbar-buttons/portfolio.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/img/navbar-buttons/services.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/img/2-11.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/img/logo.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/img/navbar-buttons/Login.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/img/navbar-buttons/Homeh.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/vendor/aos/aos.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/img/portfolio/Pouyatex-main.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:18:59] "[36mGET /static/assets/img/portfolio/Vestmentia-main.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:19:00] "[36mGET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:19:00] "[36mGET /static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:19:00] "[36mGET /static/assets/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:19:00] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:19:00] "[36mGET /static/assets/vendor/typed.js/typed.umd.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:19:00] "[36mGET /static/assets/vendor/waypoints/noframework.waypoints.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:19:00] "[36mGET /static/assets/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:19:00] "[36mGET /static/assets/js/main.js HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:19:01] "[36mGET /static/assets/img/navbar-buttons/Loginh.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [19/Oct/2025 03:19:02] "GET /login HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:19:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+172.17.0.2 - - [19/Oct/2025 03:19:11] "GET /admin HTTP/1.1" 200 -
+172.17.0.2 - - [19/Oct/2025 03:19:11] "[36mGET /static/assets/css/style.css HTTP/1.1[0m" 304 -
+66.132.153.138 - - [19/Oct/2025 03:36:56] "GET / HTTP/1.1" 200 -
+66.132.153.138 - - [19/Oct/2025 03:36:57] "[33mGET /../static/assets/img/favicon.png HTTP/1.1[0m" 404 -
+66.132.153.138 - - [19/Oct/2025 03:36:58] "[33mGET /../static/assets/img/apple-touch-icon.png HTTP/1.1[0m" 404 -
+66.132.153.138 - - [19/Oct/2025 03:36:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+66.132.153.138 - - [19/Oct/2025 03:36:59] code 505, message Invalid HTTP version (2.0)
+66.132.153.138 - - [19/Oct/2025 03:36:59] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+66.132.153.138 - - [19/Oct/2025 03:37:03] "GET / HTTP/1.1" 200 -
+135.237.126.250 - - [19/Oct/2025 04:20:19] "GET / HTTP/1.1" 200 -
+135.237.126.250 - - [19/Oct/2025 04:20:19] code 400, message Bad request syntax ('MGLNDD_51.89.160.19_9000')
+135.237.126.250 - - [19/Oct/2025 04:20:19] "[35m[1mMGLNDD_51.89.160.19_9000[0m" HTTPStatus.BAD_REQUEST -
+167.99.46.102 - - [19/Oct/2025 06:16:42] "GET / HTTP/1.1" 200 -
+167.99.46.102 - - [19/Oct/2025 06:16:42] "GET /static/assets/img/favicon.png HTTP/1.1" 200 -
+115.231.78.14 - - [19/Oct/2025 06:34:49] "GET / HTTP/1.1" 200 -
+115.231.78.14 - - [19/Oct/2025 06:34:50] "GET /static/assets/img/favicon.png HTTP/1.1" 200 -
+115.231.78.14 - - [19/Oct/2025 06:34:51] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+115.231.78.14 - - [19/Oct/2025 06:34:52] "GET /static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1" 200 -
+115.231.78.14 - - [19/Oct/2025 06:34:52] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 200 -
+115.231.78.14 - - [19/Oct/2025 06:34:53] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+115.231.78.14 - - [19/Oct/2025 06:34:54] "GET /static/assets/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 -
+115.231.78.14 - - [19/Oct/2025 06:34:55] "GET /static/assets/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 -
+115.231.78.14 - - [19/Oct/2025 06:34:56] "GET /static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 -
+115.231.78.14 - - [19/Oct/2025 06:34:58] "GET /static/assets/vendor/typed.js/typed.umd.js HTTP/1.1" 200 -
+115.231.78.14 - - [19/Oct/2025 06:34:58] "GET /static/assets/vendor/waypoints/noframework.waypoints.js HTTP/1.1" 200 -
+115.231.78.14 - - [19/Oct/2025 06:34:59] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 200 -
+115.231.78.14 - - [19/Oct/2025 06:35:00] "GET /static/assets/js/main.js HTTP/1.1" 200 -
+65.49.1.212 - - [19/Oct/2025 09:44:10] code 400, message Bad request version ('À\x14À')
+65.49.1.212 - - [19/Oct/2025 09:44:10] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03P|Åì\x03Aôg¤Àèc\x0dS\x0e\x1a\x93p\x83±û«\x07'\x83f7Pêº\x99\x12\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+198.235.24.101 - - [19/Oct/2025 10:52:42] "[33mGET /.well-known/security.txt HTTP/1.1[0m" 404 -
+139.162.251.127 - - [19/Oct/2025 13:11:19] "GET / HTTP/1.0" 200 -
+139.162.251.127 - - [19/Oct/2025 13:11:19] "OPTIONS / HTTP/1.0" 200 -
+139.162.251.127 - - [19/Oct/2025 13:11:19] code 400, message Bad request version ('RTSP/1.0')
+139.162.251.127 - - [19/Oct/2025 13:11:19] "[35m[1mOPTIONS / RTSP/1.0[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [19/Oct/2025 13:11:24] code 400, message Bad request version ('\x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+139.162.251.127 - - [19/Oct/2025 13:11:24] "[35m[1m\x80\x00\x00(rþ\x1d\x13\x00\x00\x00\x00\x00\x00\x00\x02\x00\x01\x86 \x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [19/Oct/2025 13:11:29] code 400, message Bad HTTP/0.9 request type ('\x00')
+139.162.251.127 - - [19/Oct/2025 13:11:29] "[35m[1m\x00\x1e\x00\x06\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x07version\x04bind\x00\x00\x10\x00\x03[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [19/Oct/2025 13:11:29] code 400, message Bad request syntax ('HELP')
+139.162.251.127 - - [19/Oct/2025 13:11:29] "[35m[1mHELP[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [19/Oct/2025 13:11:29] code 400, message Bad request syntax ('\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00')
+139.162.251.127 - - [19/Oct/2025 13:11:29] "[35m[1m\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [19/Oct/2025 13:11:29] code 400, message Bad request version ('\x00/\x00')
+139.162.251.127 - - [19/Oct/2025 13:11:29] "[35m[1m\x16\x03\x00\x00i\x01\x00\x00e\x03\x03U\x1c§ärandom1random2random3random4\x00\x00\x0c\x00/\x00[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [19/Oct/2025 13:11:29] code 400, message Bad request syntax ('\x00\x00\x00qj\x81n0\x81k¡\x03\x02\x01\x05¢\x03\x02\x01')
+139.162.251.127 - - [19/Oct/2025 13:11:29] "[35m[1m\x00\x00\x00qj\x81n0\x81k¡\x03\x02\x01\x05¢\x03\x02\x01[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [19/Oct/2025 13:11:34] code 400, message Bad request version ('0.12\x00')
+139.162.251.127 - - [19/Oct/2025 13:11:34] "[35m[1m\x00\x00\x00¤ÿSMBr\x00\x00\x00\x00\x08\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x00\x81\x00\x02PC NETWORK PROGRAM 1.0\x00\x02MICROSOFT NETWORKS 1.03\x00\x02MICROSOFT NETWORKS 3.0\x00\x02LANMAN1.0\x00\x02LM1.2X002\x00\x02Samba\x00\x02NT LANMAN 1.0\x00\x02NT LM 0.12\x00[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [19/Oct/2025 13:11:39] code 400, message Bad HTTP/0.9 request type ('l\x00')
+139.162.251.127 - - [19/Oct/2025 13:11:39] "[35m[1ml\x00\x0b\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [19/Oct/2025 13:11:39] code 400, message Bad request version ('SIP/2.0')
+139.162.251.127 - - [19/Oct/2025 13:11:39] "[35m[1mOPTIONS sip:nm SIP/2.0[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [19/Oct/2025 13:11:44] code 400, message Bad HTTP/0.9 request type ('AMQP\x00\x00')
+139.162.251.127 - - [19/Oct/2025 13:11:44] "[35m[1mAMQP\x00\x00\x09\x01[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [19/Oct/2025 13:11:44] code 400, message Bad request version ('\x00/\x00')
+139.162.251.127 - - [19/Oct/2025 13:11:44] "[35m[1m\x16\x03\x00\x00i\x01\x00\x00e\x03\x03U\x1c§ärandom1random2random3random4\x00\x00\x0c\x00/\x00[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [19/Oct/2025 13:11:54] code 400, message Bad request version ('\x9ey&T\x8b\x04`t')
+139.162.251.127 - - [19/Oct/2025 13:11:54] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x9fLÝ¤º\x9a\x12 ´;\x99\x9ax57£\x04\x81G%Ä&D\x98V\x96\x8a»¸MÞ/ \x9ey&T\x8b\x04`t[0m" HTTPStatus.BAD_REQUEST -
+3.131.215.38 - - [19/Oct/2025 15:22:32] "GET / HTTP/1.1" 200 -
+3.131.215.38 - - [19/Oct/2025 15:24:21] "GET / HTTP/1.1" 200 -
+3.131.215.38 - - [19/Oct/2025 15:26:21] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03é*Ã,\x16éù£çhC\x89å=°å*Ôæ\x0e³\x8d\x17·Ö|\x8dñ¬Û@\x17\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+3.131.215.38 - - [19/Oct/2025 15:26:21] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03é*Ã,\x16éù£çhC\x89å=°å*Ôæ\x0e³\x8d\x17·Ö|\x8dñ¬Û@\x17\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+3.131.215.38 - - [19/Oct/2025 15:27:26] code 400, message Bad request syntax ('SSH-2.0-Go')
+3.131.215.38 - - [19/Oct/2025 15:27:26] "[35m[1mSSH-2.0-Go[0m" HTTPStatus.BAD_REQUEST -
+3.131.215.38 - - [19/Oct/2025 15:28:57] code 400, message Bad request version ('À\x14À')
+3.131.215.38 - - [19/Oct/2025 15:28:57] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03õ\x08ÜW\x840LTF¢\x16\x10ßÅ.wï£LÐX\x86b\x16\x0d­\x9brëm@C\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+34.14.46.141 - - [19/Oct/2025 19:01:48] "GET / HTTP/1.1" 200 -
+62.60.131.129 - - [19/Oct/2025 22:39:34] code 400, message Bad request version ('SCRIPT_FILENAME/AAAAAAAAAA\x0e\x03REQUEST_METHODGET\x00\x01\x04\x00\x01\x00\x00\x00\x00\x01\x05\x00\x01\x00\x00\x00\x00')
+62.60.131.129 - - [19/Oct/2025 22:39:34] "[35m[1m\x01\x01\x00\x01\x00\x08\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x04\x00\x01\x00G\x01\x00\x0b\x0bSCRIPT_NAME/AAAAAAAAAA\x0f\x0bSCRIPT_FILENAME/AAAAAAAAAA\x0e\x03REQUEST_METHODGET\x00\x01\x04\x00\x01\x00\x00\x00\x00\x01\x05\x00\x01\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+104.248.210.220 - - [19/Oct/2025 23:03:41] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03Â\x0e~&F\x93\x00_2\x08~uø)â\x9eX\x8eü\x02÷í¢óe\x89BTÕ$|r\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+104.248.210.220 - - [19/Oct/2025 23:03:41] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03Â\x0e~&F\x93\x00_2\x08~uø)â\x9eX\x8eü\x02÷í¢óe\x89BTÕ$|r\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+104.248.210.220 - - [19/Oct/2025 23:03:42] code 400, message Bad request version ('À\x14À')
+104.248.210.220 - - [19/Oct/2025 23:03:42] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03úrà½N\x90Nò\x03wl\x8e\x90Øð*4$ÛJ\x8dÔ\x13\x9fñqO\x80\x12\x0c\x07N\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+104.248.210.220 - - [19/Oct/2025 23:03:42] "GET / HTTP/1.1" 200 -
+66.132.153.116 - - [20/Oct/2025 04:02:15] "GET / HTTP/1.1" 200 -
+66.132.153.116 - - [20/Oct/2025 04:02:16] "[33mGET /../static/assets/img/favicon.png HTTP/1.1[0m" 404 -
+66.132.153.116 - - [20/Oct/2025 04:02:17] "[33mGET /../static/assets/img/apple-touch-icon.png HTTP/1.1[0m" 404 -
+66.132.153.116 - - [20/Oct/2025 04:02:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+66.132.153.116 - - [20/Oct/2025 04:02:18] code 505, message Invalid HTTP version (2.0)
+66.132.153.116 - - [20/Oct/2025 04:02:18] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+66.132.153.116 - - [20/Oct/2025 04:02:25] "GET / HTTP/1.1" 200 -
+147.185.132.39 - - [20/Oct/2025 04:21:00] "GET / HTTP/1.1" 200 -
+137.184.226.171 - - [20/Oct/2025 05:14:51] "GET / HTTP/0.9" 200 -
+64.62.197.122 - - [20/Oct/2025 06:47:09] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03®E\x10Oýkoú\x03Ì`\x99ù${\x92L\x86FÅ\x88Láæ²B%\x8a\x12ç;l\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+64.62.197.122 - - [20/Oct/2025 06:47:09] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03®E\x10Oýkoú\x03Ì`\x99ù${\x92L\x86FÅ\x88Láæ²B%\x8a\x12ç;l\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+172.17.0.2 - - [20/Oct/2025 07:12:11] "GET /login HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:12:15] "[36mGET /static/assets/img/navbar-buttons/Loginh.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:12:18] "GET /static/assets/img/navbar-buttons/abouth.png HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:12:19] "GET /static/assets/img/navbar-buttons/portfolioh.png HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:12:19] "GET /static/assets/img/navbar-buttons/servicesh.png HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:12:19] "GET /static/assets/img/navbar-buttons/contacth.png HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:12:21] "GET /login HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:12:46] "[36mGET /static/assets/vendor/aos/aos.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:12:46] "[36mGET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:12:46] "[36mGET /static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:12:46] "[36mGET /static/assets/vendor/boxicons/css/boxicons.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:12:46] "[36mGET /static/assets/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:12:46] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:12:46] "[36mGET /static/assets/css/style.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:12:46] "GET /static/assets/vendor/purecounter/purecounter_vanilla.js.map HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:12:46] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:12:46] "GET /static/assets/vendor/swiper/swiper-bundle.min.js.map HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:12:46] "GET /static/assets/vendor/typed.js/typed.umd.js.map HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:12:47] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:17:48] "[36mGET /static/assets/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:17:48] "[36mGET /static/assets/vendor/purecounter/purecounter_vanilla.js.map HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:17:48] "[36mGET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:17:48] "[36mGET /static/assets/vendor/swiper/swiper-bundle.min.js.map HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:17:48] "[36mGET /static/assets/vendor/typed.js/typed.umd.js.map HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:17:54] "[36mGET /static/assets/img/2-11.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:18:12] "[36mGET /static/assets/img/2-11.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:18:48] "GET /login HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:18:48] "[36mGET /static/assets/img/2-11.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:18:54] "GET /login HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:18:54] "[36mGET /static/assets/img/2-11.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:28:52] "GET /login HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 07:28:52] "[36mGET /static/assets/css/style.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 07:28:53] "[36mGET /static/assets/img/2-11.jpg HTTP/1.1[0m" 304 -
+20.98.128.249 - - [20/Oct/2025 09:01:44] code 400, message Bad request syntax ('SSH-2.0-Go')
+20.98.128.249 - - [20/Oct/2025 09:01:44] "[35m[1mSSH-2.0-Go[0m" HTTPStatus.BAD_REQUEST -
+20.98.128.249 - - [20/Oct/2025 09:01:45] code 400, message Bad request syntax ('MGLNDD_51.89.160.19_9000')
+20.98.128.249 - - [20/Oct/2025 09:01:45] "[35m[1mMGLNDD_51.89.160.19_9000[0m" HTTPStatus.BAD_REQUEST -
+40.124.120.41 - - [20/Oct/2025 10:08:29] "GET / HTTP/1.1" 200 -
+40.124.120.41 - - [20/Oct/2025 10:08:29] code 400, message Bad request syntax ('MGLNDD_51.89.160.19_9000')
+40.124.120.41 - - [20/Oct/2025 10:08:29] "[35m[1mMGLNDD_51.89.160.19_9000[0m" HTTPStatus.BAD_REQUEST -
+172.17.0.2 - - [20/Oct/2025 11:07:04] "[36mGET /static/assets/img/navbar-buttons/Loginh.png HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 11:07:05] "GET /login HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 11:07:05] "[36mGET /static/assets/css/style.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 11:07:05] "[36mGET /static/assets/img/2-11.jpg HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 11:07:16] "GET /login HTTP/1.1" 200 -
+172.17.0.2 - - [20/Oct/2025 11:07:16] "[36mGET /static/assets/css/style.css HTTP/1.1[0m" 304 -
+172.17.0.2 - - [20/Oct/2025 11:07:16] "[36mGET /static/assets/img/2-11.jpg HTTP/1.1[0m" 304 -
+193.174.89.19 - - [20/Oct/2025 13:08:17] "[33mGET /fhir-server/api/v4/metadata HTTP/1.1[0m" 404 -
+193.174.89.19 - - [20/Oct/2025 13:08:19] "[33mGET /baseDstu2/metadata HTTP/1.1[0m" 404 -
+193.174.89.19 - - [20/Oct/2025 13:08:19] "[33mGET /r3/metadata HTTP/1.1[0m" 404 -
+193.174.89.19 - - [20/Oct/2025 13:08:19] "[33mGET /baseDstu3/metadata HTTP/1.1[0m" 404 -
+193.174.89.19 - - [20/Oct/2025 13:08:19] "[33mGET /baseR2/metadata HTTP/1.1[0m" 404 -
+193.174.89.19 - - [20/Oct/2025 13:08:19] "[33mGET /metadata HTTP/1.1[0m" 404 -
+193.174.89.19 - - [20/Oct/2025 13:08:19] "[33mGET /r2/metadata HTTP/1.1[0m" 404 -
+193.174.89.19 - - [20/Oct/2025 13:08:19] "[33mGET /fhir/metadata HTTP/1.1[0m" 404 -
+193.174.89.19 - - [20/Oct/2025 13:08:19] "[33mGET /baseR4/metadata HTTP/1.1[0m" 404 -
+193.174.89.19 - - [20/Oct/2025 13:08:19] "[33mGET /r4/metadata HTTP/1.1[0m" 404 -
+193.174.89.19 - - [20/Oct/2025 13:08:19] "[33mGET /r5/metadata HTTP/1.1[0m" 404 -
+193.174.89.19 - - [20/Oct/2025 13:08:19] "[33mGET /baseR3/metadata HTTP/1.1[0m" 404 -
+193.174.89.19 - - [20/Oct/2025 13:08:19] "[33mGET /baseR5/metadata HTTP/1.1[0m" 404 -
+3.132.23.201 - - [20/Oct/2025 16:28:22] "GET / HTTP/1.1" 200 -
+3.132.23.201 - - [20/Oct/2025 16:29:51] "GET / HTTP/1.1" 200 -
+3.132.23.201 - - [20/Oct/2025 16:31:00] code 400, message Bad request version ('À\x14À')
+3.132.23.201 - - [20/Oct/2025 16:31:00] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03£fã>]ô¿Cä\x93Ù¨M.0\x08«\x00Y'ëÕpßè r\x97\x03\x06MK\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+3.132.23.201 - - [20/Oct/2025 16:32:05] code 400, message Bad request syntax ('SSH-2.0-Go')
+3.132.23.201 - - [20/Oct/2025 16:32:05] "[35m[1mSSH-2.0-Go[0m" HTTPStatus.BAD_REQUEST -
+3.132.23.201 - - [20/Oct/2025 16:33:37] code 400, message Bad request version ('À\x14À')
+3.132.23.201 - - [20/Oct/2025 16:33:37] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03(f\x8b2½¨C¨9Ò¢e¿\x0e\\Æ\x81ÞW'Aá >ª\x81ªÂ\x81ù`\x7f\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+142.93.230.252 - - [20/Oct/2025 19:07:10] "GET / HTTP/1.1" 200 -
+142.93.230.252 - - [20/Oct/2025 19:07:20] code 400, message Bad request version ("x64|'|'|No|'|'|S17|'|'|..|'|'|SW5ib3ggLSBPdXRsb29rIERhdGEgRmlsZSAtIE1pY3Jvc29mdCBPdXRsb29rAA==|'|'|")
+142.93.230.252 - - [20/Oct/2025 19:07:20] "[35m[1m238\x00ll|'|'|SGFjS2VkX0Q3NUU2QUFB|'|'|WIN-QZN7FJ7D1O|'|'|Administrator|'|'|18-11-28|'|'||'|'|Win 7 Ultimate SP1 x64|'|'|No|'|'|S17|'|'|..|'|'|SW5ib3ggLSBPdXRsb29rIERhdGEgRmlsZSAtIE1pY3Jvc29mdCBPdXRsb29rAA==|'|'|[0m" HTTPStatus.BAD_REQUEST -
+195.184.76.210 - - [20/Oct/2025 19:57:03] code 400, message Bad request version ("Y6°hP_u§\x18Á¦ÍÈ\x8fµ#i£)&\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+195.184.76.210 - - [20/Oct/2025 19:57:03] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03d\x14ý\x1dc|\x0eá\x86/ûÑ~át\x95Å_Þ2$\x8eH*víeETû\x10¾ úû¯\x84Ñ\x9a\x89¨²H¬\x0dY6°hP_u§\x18Á¦ÍÈ\x8fµ#i£)&\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" HTTPStatus.BAD_REQUEST -
+195.184.76.143 - - [20/Oct/2025 19:57:04] code 400, message Bad request version ("ÕçÁ\x051éþÒê\x13\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+195.184.76.143 - - [20/Oct/2025 19:57:04] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03â\x0c\x06¯\x83\x89\x18S2n^r\x85Á\x06».\x8a#ÇÅG"¦ê5.E9¯H¯ OàtÝÿ\x18\x80(\x8aÉÒúÏºúÁrB\\k\x90\x09ÕçÁ\x051éþÒê\x13\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" HTTPStatus.BAD_REQUEST -
+91.196.152.181 - - [20/Oct/2025 20:24:42] code 400, message Bad request version ("|E\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+91.196.152.181 - - [20/Oct/2025 20:24:42] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ÁP\x19Y`\x82¸\x0fâ¥\x81ø\x8eç\x1d\x19Ø\x86\x17\x05~ßº\x80\x931\x08\x12ÇÚþA Kjr\x8a\x91Rè\x97\x81ð\x032·I¾]\x9b\x0d\x1fê`\x87%Mªy\x19þ¥\x09|E\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" HTTPStatus.BAD_REQUEST -
+91.196.152.215 - - [20/Oct/2025 20:24:42] code 400, message Bad request version ('\x88Ð\x18')
+91.196.152.215 - - [20/Oct/2025 20:24:42] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03éÎOx¹d!ÊM]ÿ\x93¸Ø\x87µ_ü\x11\x80\x1c¿)K0Kiµ\x85\x1e\x0f< vbçjÿk¼]\x1e\x88Ð\x18[0m" HTTPStatus.BAD_REQUEST -
+185.247.137.15 - - [20/Oct/2025 21:21:49] code 400, message Bad request version ('À\x13À')
+185.247.137.15 - - [20/Oct/2025 21:21:49] "[35m[1m\x16\x03\x01\x01(\x01\x00\x01$\x03\x03\x80R(`\x06wn¹¬ö\x1c<½ô«\x19Ð\x0f&\x10\x0d\x96ÙàR.d\x12-e\x13\x1c cBãgøg\x0d*|\x1d{£Vx\x05t\x1bãáP0!äH¸ïë\x9dM\x9f7"\x00<À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+87.236.176.3 - - [20/Oct/2025 21:22:04] "GET / HTTP/1.1" 200 -
+87.236.176.249 - - [20/Oct/2025 21:22:05] "GET /static/assets/img/favicon.png HTTP/1.1" 200 -
+87.236.176.23 - - [20/Oct/2025 21:22:05] "GET /static/assets/img/apple-touch-icon.png HTTP/1.1" 200 -
+62.60.131.129 - - [20/Oct/2025 21:37:13] code 400, message Bad request version ('SCRIPT_FILENAME/AAAAAAAAAA\x0e\x03REQUEST_METHODGET\x00\x01\x04\x00\x01\x00\x00\x00\x00\x01\x05\x00\x01\x00\x00\x00\x00')
+62.60.131.129 - - [20/Oct/2025 21:37:13] "[35m[1m\x01\x01\x00\x01\x00\x08\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x04\x00\x01\x00G\x01\x00\x0b\x0bSCRIPT_NAME/AAAAAAAAAA\x0f\x0bSCRIPT_FILENAME/AAAAAAAAAA\x0e\x03REQUEST_METHODGET\x00\x01\x04\x00\x01\x00\x00\x00\x00\x01\x05\x00\x01\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+167.94.138.42 - - [20/Oct/2025 23:04:07] "GET / HTTP/1.1" 200 -
+167.94.138.42 - - [20/Oct/2025 23:04:16] "GET / HTTP/1.1" 200 -
+167.94.138.42 - - [20/Oct/2025 23:04:18] "[33mGET /../static/assets/img/favicon.png HTTP/1.1[0m" 404 -
+167.94.138.42 - - [20/Oct/2025 23:04:19] "[33mGET /../static/assets/img/apple-touch-icon.png HTTP/1.1[0m" 404 -
+167.94.138.42 - - [20/Oct/2025 23:04:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+167.94.138.42 - - [20/Oct/2025 23:04:23] code 505, message Invalid HTTP version (2.0)
+167.94.138.42 - - [20/Oct/2025 23:04:23] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.138.42 - - [20/Oct/2025 23:04:30] "GET / HTTP/1.1" 200 -
+84.239.31.137 - - [20/Oct/2025 23:46:43] code 400, message Bad request syntax ('\x00\x00\x00\x00\x00\x00\x00`R\x00\x00\x00{"MODULE":"CERTIFICATE","OPERATION":"CONNECT","SESSION":"00000005-6f72-41ca-9c73-b4713263eb60"}\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+84.239.31.137 - - [20/Oct/2025 23:46:43] "[35m[1m\x00\x00\x00\x00\x00\x00\x00`R\x00\x00\x00{"MODULE":"CERTIFICATE","OPERATION":"CONNECT","SESSION":"00000005-6f72-41ca-9c73-b4713263eb60"}\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+84.239.31.137 - - [20/Oct/2025 23:46:44] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+84.239.31.137 - - [20/Oct/2025 23:46:44] "[35m[1m\x00\x00\x00 c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+84.239.31.137 - - [20/Oct/2025 23:46:46] code 400, message Bad request syntax ('\xa0\x00\x00`\x00\x00\x00\x00admin\x00\x00\x00admin\x00\x00\x00\x04\x01\x00\x00\x00\x00¡ª')
+84.239.31.137 - - [20/Oct/2025 23:46:46] "[35m[1m \x00\x00`\x00\x00\x00\x00admin\x00\x00\x00admin\x00\x00\x00\x04\x01\x00\x00\x00\x00¡ª[0m" HTTPStatus.BAD_REQUEST -
+207.90.244.28 - - [20/Oct/2025 23:50:31] code 400, message Bad request version ('?½\x83ºû{\x82\x0e®c\x89\x00\x00rÀ0À,À(À$À\x14À')
+207.90.244.28 - - [20/Oct/2025 23:50:31] "[35m[1m\x16\x03\x01\x00ô\x01\x00\x00ð\x03\x03\x97ª\x91g\x84\x86½ñÞF\x1eYù\x09Ü=×q[8\x1f?½\x83ºû{\x82\x0e®c\x89\x00\x00rÀ0À,À(À$À\x14À[0m" HTTPStatus.BAD_REQUEST -
+207.90.244.28 - - [20/Oct/2025 23:50:35] "GET / HTTP/1.1" 200 -
+87.236.176.33 - - [21/Oct/2025 01:39:51] code 400, message Bad request syntax ('\x16\x03\x01\x01')
+87.236.176.33 - - [21/Oct/2025 01:39:51] "[35m[1m\x16\x03\x01\x01[0m" HTTPStatus.BAD_REQUEST -
+87.236.176.16 - - [21/Oct/2025 01:40:06] "GET / HTTP/1.1" 200 -
+185.247.137.136 - - [21/Oct/2025 01:40:07] "GET /static/assets/img/favicon.png HTTP/1.1" 200 -
+185.247.137.250 - - [21/Oct/2025 01:40:07] "GET /static/assets/img/apple-touch-icon.png HTTP/1.1" 200 -
+167.94.146.56 - - [21/Oct/2025 03:49:37] code 400, message Bad request version ('\x89"D#O°"mÆ\x8f')
+167.94.146.56 - - [21/Oct/2025 03:49:37] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03·]\x04oç\x9e¤Þ\x9b'je)9\x1b47m\x93Õ)s\x84Èløè\x1cÖ\x03ªË \x89"D#O°"mÆ\x8f[0m" HTTPStatus.BAD_REQUEST -
+167.94.146.56 - - [21/Oct/2025 03:49:40] "GET / HTTP/1.1" 200 -
+167.94.146.56 - - [21/Oct/2025 03:49:44] "GET / HTTP/1.1" 200 -
+167.94.146.56 - - [21/Oct/2025 03:49:44] "[33mGET /../static/assets/img/favicon.png HTTP/1.1[0m" 404 -
+167.94.146.56 - - [21/Oct/2025 03:49:44] "[33mGET /../static/assets/img/apple-touch-icon.png HTTP/1.1[0m" 404 -
+167.94.146.56 - - [21/Oct/2025 03:49:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+167.94.146.56 - - [21/Oct/2025 03:49:44] code 505, message Invalid HTTP version (2.0)
+167.94.146.56 - - [21/Oct/2025 03:49:44] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.146.56 - - [21/Oct/2025 03:49:47] "GET / HTTP/1.1" 200 -
+147.185.132.234 - - [21/Oct/2025 03:55:59] "GET / HTTP/1.1" 200 -
+80.82.77.33 - - [21/Oct/2025 04:55:07] code 400, message Bad request syntax ("\x16\x03\x01\x00ô\x01\x00\x00ð\x03\x03ÔÄ}Ðf\x9cUÍXí\x1bÛè\x8aÚÐzõRðBÉ'$\x9fF¢F\x05C¥²\x00\x00rÀ0À,À(À$À\x14À")
+80.82.77.33 - - [21/Oct/2025 04:55:07] "[35m[1m\x16\x03\x01\x00ô\x01\x00\x00ð\x03\x03ÔÄ}Ðf\x9cUÍXí\x1bÛè\x8aÚÐzõRðBÉ'$\x9fF¢F\x05C¥²\x00\x00rÀ0À,À(À$À\x14À[0m" HTTPStatus.BAD_REQUEST -
+80.82.77.33 - - [21/Oct/2025 04:55:10] "GET / HTTP/1.1" 200 -
+20.163.15.177 - - [21/Oct/2025 05:09:33] code 400, message Bad request syntax ('MGLNDD_51.89.160.19_9000')
+20.163.15.177 - - [21/Oct/2025 05:09:33] "[35m[1mMGLNDD_51.89.160.19_9000[0m" HTTPStatus.BAD_REQUEST -
+71.6.134.230 - - [21/Oct/2025 09:54:16] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x00\x7f\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+71.6.134.230 - - [21/Oct/2025 09:54:16] "[35m[1m\x16\x03\x01\x00ì\x01\x00\x00è\x03\x03¶EÔ[ó»²\x0f\x15p\x8b1ñ\x85»ÑÛÀÞ\x85 Ô±ëB\x83`ÿ\x7fíû\x93 $\x0d\x1eóè\x99\x85\x16#»æC\x1bê\x96ÞA\x88+\x07\x9ax\x10ì\x09\x8fv\x9eYvÚ£\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x00\x7f\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+103.203.57.26 - - [21/Oct/2025 09:58:14] "[33mGET http://clientapi.ipip.net/echo.php?info=20251021095814 HTTP/1.1[0m" 404 -
+103.203.57.26 - - [21/Oct/2025 09:58:19] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+103.203.57.26 - - [21/Oct/2025 09:58:19] "[35m[1m\x05\x02\x00\x02[0m" HTTPStatus.BAD_REQUEST -
+71.6.134.230 - - [21/Oct/2025 10:09:44] "GET / HTTP/1.1" 200 -
+71.6.134.230 - - [21/Oct/2025 10:10:06] "GET /static/assets/img/favicon.png HTTP/1.1" 200 -
+64.62.156.132 - - [21/Oct/2025 12:43:20] code 400, message Bad request version ('À\x14À')
+64.62.156.132 - - [21/Oct/2025 12:43:20] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03È²]\x8aÃiò\x14d3äÕÁRi\x13£\x98C6ª·aÏ½ÄÕ~ô\x85×³\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+205.210.31.96 - - [21/Oct/2025 14:07:21] "GET / HTTP/1.1" 200 -
+80.66.75.28 - - [21/Oct/2025 14:14:52] code 400, message Bad request syntax ('\x01\x01æ')
+80.66.75.28 - - [21/Oct/2025 14:14:52] "[35m[1m\x01\x01æ[0m" HTTPStatus.BAD_REQUEST -
+20.65.195.105 - - [21/Oct/2025 14:54:58] code 400, message Bad request syntax ('SSH-2.0-Go')
+20.65.195.105 - - [21/Oct/2025 14:54:58] "[35m[1mSSH-2.0-Go[0m" HTTPStatus.BAD_REQUEST -
+20.65.195.105 - - [21/Oct/2025 14:54:58] code 400, message Bad request syntax ('MGLNDD_51.89.160.19_9000')
+20.65.195.105 - - [21/Oct/2025 14:54:58] "[35m[1mMGLNDD_51.89.160.19_9000[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [21/Oct/2025 15:34:53] "GET / HTTP/1.0" 200 -
+139.162.251.127 - - [21/Oct/2025 15:34:53] "OPTIONS / HTTP/1.0" 200 -
+139.162.251.127 - - [21/Oct/2025 15:34:53] code 400, message Bad request version ('RTSP/1.0')
+139.162.251.127 - - [21/Oct/2025 15:34:53] "[35m[1mOPTIONS / RTSP/1.0[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [21/Oct/2025 15:34:58] code 400, message Bad request version ('\x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+139.162.251.127 - - [21/Oct/2025 15:34:58] "[35m[1m\x80\x00\x00(rþ\x1d\x13\x00\x00\x00\x00\x00\x00\x00\x02\x00\x01\x86 \x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [21/Oct/2025 15:35:03] code 400, message Bad HTTP/0.9 request type ('\x00')
+139.162.251.127 - - [21/Oct/2025 15:35:03] "[35m[1m\x00\x1e\x00\x06\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x07version\x04bind\x00\x00\x10\x00\x03[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [21/Oct/2025 15:35:03] code 400, message Bad request syntax ('HELP')
+139.162.251.127 - - [21/Oct/2025 15:35:03] "[35m[1mHELP[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [21/Oct/2025 15:35:03] code 400, message Bad request syntax ('\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00')
+139.162.251.127 - - [21/Oct/2025 15:35:03] "[35m[1m\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [21/Oct/2025 15:35:03] code 400, message Bad request version ('\x00/\x00')
+139.162.251.127 - - [21/Oct/2025 15:35:03] "[35m[1m\x16\x03\x00\x00i\x01\x00\x00e\x03\x03U\x1c§ärandom1random2random3random4\x00\x00\x0c\x00/\x00[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [21/Oct/2025 15:35:03] code 400, message Bad request syntax ('\x00\x00\x00qj\x81n0\x81k¡\x03\x02\x01\x05¢\x03\x02\x01')
+139.162.251.127 - - [21/Oct/2025 15:35:03] "[35m[1m\x00\x00\x00qj\x81n0\x81k¡\x03\x02\x01\x05¢\x03\x02\x01[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [21/Oct/2025 15:35:09] code 400, message Bad request version ('0.12\x00')
+139.162.251.127 - - [21/Oct/2025 15:35:09] "[35m[1m\x00\x00\x00¤ÿSMBr\x00\x00\x00\x00\x08\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x00\x81\x00\x02PC NETWORK PROGRAM 1.0\x00\x02MICROSOFT NETWORKS 1.03\x00\x02MICROSOFT NETWORKS 3.0\x00\x02LANMAN1.0\x00\x02LM1.2X002\x00\x02Samba\x00\x02NT LANMAN 1.0\x00\x02NT LM 0.12\x00[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [21/Oct/2025 15:35:14] code 400, message Bad HTTP/0.9 request type ('l\x00')
+139.162.251.127 - - [21/Oct/2025 15:35:14] "[35m[1ml\x00\x0b\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [21/Oct/2025 15:35:14] code 400, message Bad request version ('SIP/2.0')
+139.162.251.127 - - [21/Oct/2025 15:35:14] "[35m[1mOPTIONS sip:nm SIP/2.0[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [21/Oct/2025 15:35:19] code 400, message Bad HTTP/0.9 request type ('AMQP\x00\x00')
+139.162.251.127 - - [21/Oct/2025 15:35:19] "[35m[1mAMQP\x00\x00\x09\x01[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [21/Oct/2025 15:35:19] code 400, message Bad request version ('\x00/\x00')
+139.162.251.127 - - [21/Oct/2025 15:35:19] "[35m[1m\x16\x03\x00\x00i\x01\x00\x00e\x03\x03U\x1c§ärandom1random2random3random4\x00\x00\x0c\x00/\x00[0m" HTTPStatus.BAD_REQUEST -
+139.162.251.127 - - [21/Oct/2025 15:35:29] code 400, message Bad request version ("ß\x12½}Ð|8§/%6\x96Éïz`û®I_\x12çkÈú\x94³\x01\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À")
+139.162.251.127 - - [21/Oct/2025 15:35:29] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03&"$\x11\x82Zu9zû\x8fI\x86ç\x8cE¥!i~·\x01Ö\x9bg\x19»t×ö\x1c: \x1eÂo\x1cß\x12½}Ð|8§/%6\x96Éïz`û®I_\x12çkÈú\x94³\x01\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À­À£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À[0m" HTTPStatus.BAD_REQUEST -
+13.86.116.159 - - [21/Oct/2025 16:04:08] "GET / HTTP/1.1" 200 -
+13.86.116.159 - - [21/Oct/2025 16:04:09] code 400, message Bad request syntax ('MGLNDD_51.89.160.19_9000')
+13.86.116.159 - - [21/Oct/2025 16:04:09] "[35m[1mMGLNDD_51.89.160.19_9000[0m" HTTPStatus.BAD_REQUEST -
+3.131.215.38 - - [21/Oct/2025 16:12:49] "GET / HTTP/1.1" 200 -
+3.131.215.38 - - [21/Oct/2025 16:16:24] code 400, message Bad request syntax ('SSH-2.0-Go')
+3.131.215.38 - - [21/Oct/2025 16:16:24] "[35m[1mSSH-2.0-Go[0m" HTTPStatus.BAD_REQUEST -
+3.131.215.38 - - [21/Oct/2025 16:18:10] code 400, message Bad request version ('b(K´]')
+3.131.215.38 - - [21/Oct/2025 16:18:10] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03¼Æ\x0c\x1eâ\x1cb(K´][0m" HTTPStatus.BAD_REQUEST -
+207.90.244.28 - - [21/Oct/2025 20:45:35] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00ô\x01\x00\x00ð\x03\x03µ$\x12}\x04â:\x07q#£{\x7f»`Éç\x10')
+207.90.244.28 - - [21/Oct/2025 20:45:35] "[35m[1m\x16\x03\x01\x00ô\x01\x00\x00ð\x03\x03µ$\x12}\x04â:\x07q#£{\x7f»`Éç\x10\x0b¹p%½\x87C:í9Gt\x80ó\x00\x00rÀ0À,À(À$À\x14À[0m" HTTPStatus.BAD_REQUEST -
+207.90.244.28 - - [21/Oct/2025 20:45:39] "GET / HTTP/1.1" 200 -
+198.235.24.197 - - [21/Oct/2025 22:37:28] "GET / HTTP/1.1" 200 -
+204.48.28.78 - - [21/Oct/2025 23:01:54] "GET / HTTP/1.1" 200 -
+204.48.28.78 - - [21/Oct/2025 23:01:54] "GET /static/assets/img/favicon.png HTTP/1.1" 200 -
+62.60.131.129 - - [22/Oct/2025 00:57:14] code 400, message Bad request version ('SCRIPT_FILENAME/AAAAAAAAAA\x0e\x03REQUEST_METHODGET\x00\x01\x04\x00\x01\x00\x00\x00\x00\x01\x05\x00\x01\x00\x00\x00\x00')
+62.60.131.129 - - [22/Oct/2025 00:57:14] "[35m[1m\x01\x01\x00\x01\x00\x08\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x04\x00\x01\x00G\x01\x00\x0b\x0bSCRIPT_NAME/AAAAAAAAAA\x0f\x0bSCRIPT_FILENAME/AAAAAAAAAA\x0e\x03REQUEST_METHODGET\x00\x01\x04\x00\x01\x00\x00\x00\x00\x01\x05\x00\x01\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+80.82.77.202 - - [22/Oct/2025 03:28:19] "GET / HTTP/1.0" 200 -
+80.82.77.202 - - [22/Oct/2025 04:37:07] code 400, message Bad request version ('À\x13À')
+80.82.77.202 - - [22/Oct/2025 04:37:07] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03Ø¾iHx!\x02FÑÂ¥p\x93=ØáÁEû\x9bô÷Æl#±@ø¦â]ö Áf\x03\x8c\x7f¥)\x8bó\x1dÙS\x0f¡º\x03Jæö$\x88T+å3\x89ì*ÍÎ>P\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+80.82.77.202 - - [22/Oct/2025 04:37:07] "[33mGET /aaa9 HTTP/1.1[0m" 404 -
+80.82.77.202 - - [22/Oct/2025 04:37:07] code 400, message Bad request version ('À\x13À')
+80.82.77.202 - - [22/Oct/2025 04:37:07] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03_\x7f}>\x90òäÐîw­;\x1e\x101+\x06\x1bÛ\x09\x87ÆmºÀ\x15Õ\x84\x01v|á ª\x96ÏfRrm}wSEìs\x11\x96\x92 çê\x86\x8d\x7fZQa¦y\x99µÆ\x0c=\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+80.82.77.202 - - [22/Oct/2025 04:37:07] "[33mGET /aab9 HTTP/1.1[0m" 404 -
+206.168.34.126 - - [22/Oct/2025 05:20:00] "GET / HTTP/1.1" 200 -
+206.168.34.126 - - [22/Oct/2025 05:20:03] "[33mGET /../static/assets/img/favicon.png HTTP/1.1[0m" 404 -
+206.168.34.126 - - [22/Oct/2025 05:20:03] "[33mGET /../static/assets/img/apple-touch-icon.png HTTP/1.1[0m" 404 -
+206.168.34.126 - - [22/Oct/2025 05:20:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+206.168.34.126 - - [22/Oct/2025 05:20:04] code 505, message Invalid HTTP version (2.0)
+206.168.34.126 - - [22/Oct/2025 05:20:04] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+206.168.34.126 - - [22/Oct/2025 05:20:10] "GET / HTTP/1.1" 200 -

@@ -1,0 +1,27 @@
+<div class="dashboard-card project-tree-card full-row-card">
+  <div class="project-tree__header">
+    <div>
+      <h3>Project Tree</h3>
+    </div>
+    <!-- <div class="project-tree__legend">
+      <span class="tree-legend">
+        <span class="tree-dot tree-dot--root"></span> پروژه اصلی
+      </span>
+      <span class="tree-legend">
+        <span class="tree-dot tree-dot--branch"></span> شاخه پروژه
+      </span>
+    </div> -->
+  </div>
+
+  <div class="project-tree__layout">
+    <div
+      class="project-tree__viewer"
+      data-project-tree
+      data-tree-can-edit="{{ '1' if user.role == 'admin' else '0' }}"
+    >
+      <p class="empty-state">Loading project map…</p>
+    </div>
+
+    {# Admin side panel commented out; inline editing enabled in JS #}
+  </div>
+</div>

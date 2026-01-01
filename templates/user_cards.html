@@ -1,0 +1,78 @@
+{% set cards = user_cards|default([]) %} {% if cards %} {% set role_labels =
+{'admin': 'Admin', 'supervisor': 'Supervisor', 'researcher': 'Researcher'} %} {%
+set stats_map = user_card_stats or {} %}
+<div class="user-card-grid" id="team-roster" data-team-roster>
+  <div class="dashboard-card user-card-grid__heading-card">
+    <div class="user-card-grid__heading">
+      <div>
+        <h3>Team roster</h3>
+        <p class="user-card-grid__hint">
+          Admin, supervisor, and researchers at a glance.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="user-card-grid__items">
+    {% for u in cards %} {% set display_name = u.full_name or u.username or
+    'Unknown user' %} {% set role_label = role_labels.get(u.role,
+    u.role|capitalize) %} {% set responsibility_text = (u.responsibility or
+    'Responsibility not set')|truncate(90, True, '...') %} {% set stat =
+    stats_map.get(u.id) if stats_map else None %} {% set on_time_pct =
+    stat.on_time_pct if stat else 0 %}
+    <div
+      class="dashboard-card user-card"
+      data-role="{{ u.role }}"
+      data-user-card="{{ u.id }}"
+    >
+      <div class="user-card__top">
+        <div>
+          <div class="user-card__name">{{ display_name }}</div>
+          <div class="user-card__username">@{{ u.username }}</div>
+        </div>
+        <span
+          class="user-card__role user-card__role--{{ u.role|replace(' ', '-') }}"
+          >{{ role_label }}</span
+        >
+      </div>
+      <div class="user-card__meta">
+        <span class="user-card__label">Email</span>
+        <span class="user-card__value">{{ u.email }}</span>
+      </div>
+      <div class="user-card__meta">
+        <span class="user-card__label">Phone</span>
+        <span class="user-card__value"
+          >{{ u.phone_number or 'Not provided' }}</span
+        >
+      </div>
+      <div class="user-card__meta">
+        <!-- <span class="user-card__label">Focus</span> -->
+        <span class="user-card__value">{{ responsibility_text }}</span>
+      </div>
+      <div class="user-card__progress">
+        <div class="user-card__progress-label">
+          On-time task completion
+          <span class="user-card__progress-val">{{ on_time_pct }}%</span>
+        </div>
+        <div class="progress-bar-wrap user-card__progress-wrap">
+          <div
+            class="progress-bar progress-bar--green user-card__progress-bar"
+            role="progressbar"
+            aria-valuenow="{{ on_time_pct }}"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            data-progress="{{ on_time_pct }}"
+          ></div>
+        </div>
+      </div>
+      <a
+        class="btn-mail user-card__chat-btn"
+        href="{{ url_for('chat') }}?target={{ u.id }}"
+        title="Chat with {{ display_name }}"
+      >
+        Chat
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
